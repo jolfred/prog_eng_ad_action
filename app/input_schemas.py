@@ -1,0 +1,30 @@
+from pydantic import BaseModel
+
+class AuctionFeatures(BaseModel):
+    hour: int
+    day_of_week: int
+    week_of_year: int
+    mean_hour_device: float
+    is_banner: int
+    is_interstitial: int
+    is_rewarded: int
+    popularity_of_brand: float
+    popularity_of_device: float
+    is_apple: int
+    is_US: int
+    mean_win_bid_device: float
+    median_win_bid_device: float
+    min_win_bid_device: float
+    max_win_bid_device: float
+    mean_sent_price_device: float
+    median_sent_price_device: float
+    min_sent_price_device: float
+    max_sent_price_device: float
+    is_WIFI: int
+    is_3G: int
+    mean_win_bid_c1: float
+    mean_win_bid_c3: float
+    size_width: int
+    size_height: int
+    mediation_minor: float
+    sentPrice: float
