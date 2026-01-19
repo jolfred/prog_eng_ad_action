@@ -1,14 +1,14 @@
-from fastapi import fastapi
+from fastapi import FastAPI
 from app.model import load_model
 from app.input_schemas import AuctionFeatures
 from app.inference import predict_price 
 
-app = fastapi.FastAPI(title="Auction Price Predictor")
+app = FastAPI(title="Auction Price Predictor")
 model = load_model()
 
 @app.post("/predict")
 def predict(features: AuctionFeatures):
-    data = features.dict()
+    data = features.model_dump()
     predicted_price = predict_price(model, data)
     return {
         "predicted_price": predicted_price,

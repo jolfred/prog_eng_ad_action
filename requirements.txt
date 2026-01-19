@@ -1,5 +1,4 @@
 annotated-types==0.7.0
-anyio==4.11.0
 argon2-cffi==25.1.0
 argon2-cffi-bindings==25.1.0
 arrow==1.4.0
@@ -104,3 +103,6 @@ wcwidth==0.2.14
 webcolors==25.10.0
 webencodings==0.5.1
 websocket-client==1.9.0
+fastapi==0.104.1
+uvicorn==0.24.0
+python-dotenv==1.0.0

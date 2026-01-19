@@ -1,4 +1,3 @@
-# tests/test_api.py
 from fastapi.testclient import TestClient
 from app.api import app
 
@@ -38,3 +37,4 @@ def test_prediction():
     response = client.post("/predict", json=payload)
     assert response.status_code == 200
     assert "predicted_price" in response.json()
+ 
