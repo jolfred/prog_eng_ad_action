@@ -2,7 +2,7 @@
 name: CI
 
 env:
-  MODEL_PATH: /workspaces/prog_eng_ad_action/model/model.txt
+  MODEL_PATH: /model/model.txt
 
 on: [push]
 
