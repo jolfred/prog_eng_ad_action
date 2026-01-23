@@ -133,5 +133,4 @@ Thumbs.db
 *.pkl
 *.h5
 *.joblib
-model/
 data/
