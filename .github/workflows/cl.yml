@@ -1,6 +1,9 @@
 # .github/workflows/ci.yml
 name: CI
 
+env:
+  MODEL_PATH: /workspaces/prog_eng_ad_action/model/model.txt
+
 on: [push]
 
 jobs:
