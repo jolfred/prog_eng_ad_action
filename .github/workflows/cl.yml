@@ -1,20 +1,18 @@
-# .github/workflows/ci.yml
 name: CI
-
-
 
 on: [push]
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    # Переменная теперь доступна для всех шагов в этой задаче
+    env:
+      MODEL_PATH: ${{ github.workspace }}/model/model.txt 
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-        env: 
-          MODEL_PATH: /model/model.txt
       - run: pip install -r requirements.txt
       - run: pytest
- 
