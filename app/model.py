@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-MODEL_PATH = os.getenv("/workspaces/prog_eng_ad_action/model/model.txt")
+MODEL_PATH = "/workspaces/prog_eng_ad_action/model/model.txt"
 
 
 import lightgbm as lgb
